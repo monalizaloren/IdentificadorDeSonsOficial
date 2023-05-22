@@ -9,26 +9,27 @@ function startClassification()
 function modelReady(){
   classifier.classify( gotResults);
 }
-
-function gotResults(error, results) {
-  if (error) {
-    console.error(error);
-  } else {
+// Passo 1:Crie uma função que se chama 'gotResults', com os parametros (error. results)
+//Passo 2: Programe que: Se acontecer um error, esse error será mostrado no console.error
+//Passo 3: senãooooo... será mostrado no console log (results)
+???
     console.log(results);
-    //O código abaixo deixa as cores aleatórias utilizando as cores RBG, porém apenas a leta 'R', está sendo programada. Tente programar a letra 'B' e 'G'
+    //O código abaixo deixa as cores aleatórias utilizando as cores RBG, porém apenas a leta 'R', está sendo programada. Tente programar a letra 'B' e 'G' com as mesmas configurações
     RGB_color_R = Math.floor(Math.random() * 255) + 1;
     ???
     ???
 
-//Utilize o código que altera o HTML utilizando JavaScrit
+ //No código abaixo, a variável 'results' precisa ser mostrada na tela, para que assim os resultados sejam mostrados
+//Para que isso aconteça, utilize o código que altera o HTML utilizando JavaScrit
 
     document.getElementById("result_label").??? = 'Posso ouvir - '+ results[0].label;
     document.getElementById("result_confidence").??? = 'Precisão - '+ (results[0].confidence*100).toFixed(2)+" %";
     
     //Utilize o código 'style.color' para mostrar as cores que você programou aciima
+//Além disso, coloque o nome das variáveis quem guardam as cores RBG
     
-    document.getElementById("result_label").style.color = "rgb("+RGB_color_R+","+???","+???+")";
-    document.getElementById("result_confidence").style.color = "rgb(???)";
+    document.getElementById("result_label").??? = "rgb("+RGB_color_R+","+???","+???+")";
+    document.getElementById("result_confidence").???= "rgb(???)";
 
    
   }
