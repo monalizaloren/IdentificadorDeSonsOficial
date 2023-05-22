@@ -1,9 +1,0 @@
-<View> 
-        <TouchableOpacity style={[styles.button, { backgroundColor: 'green' }]}>
-          <Text style={styles.buttonText}>pressione-me</Text>
-        </TouchableOpacity>
-        
-        <TouchableOpacity style={[styles.button, { backgroundColor: 'red' }]}>
-          <Text style={styles.buttonText}>outro botão</Text>
-        </TouchableOpacity>
-      </View>
